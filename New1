@@ -12,3 +12,20 @@ elif guess < hidden:
     print ("Your guess is too low")
 else:
     print ("Your guess is too high")
+
+hidden = random.randrange(1, 201)
+# print hidden
+
+guess = int(input("Please enter your guess: "))
+
+if guess == hidden:
+    print ("Hit!")
+    print("\n Congratulations you won\n")
+elif guess < hidden:
+    print ("Your guess is too low")
+    print("\nSorry you lost\n")
+    print("The number was: ",hidden)
+else:
+    print ("Your guess is too high")
+    print("\nSorry you lost\n")
+    print("The number was: ",hidden)
